@@ -8,68 +8,201 @@ body{
   background-color: rgb(212, 209, 209);
   margin:0;
 }
-header {
-  background:rgb(151, 148, 148);
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  gap: 20px;
-}
-.nav{
-  list-style-type: disc;
-}
-.nav li a {
-  display: flex;
-  padding: 0.2rem 0.5rem;
-  text-decoration: none;
-  border-radius: 5px;
-  color: rgb(68, 67, 67);
-  font-weight: 500;
-} 
-.nav li a:hover{
-  background-color: grey;
-}
-.pageTitle{
-  align-self: center;
-  justify-self: center;
-}
-header .pageTitle h1 {
-  text-align: center;
 
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.images{
-  justify-self: end;
-}
-.title{
-  text-align: center;
-  background: rgb(210, 101, 210);
-  padding: 1rem 2rem;
-}
-.contents{
-  border-radius: 10px;
-  padding:0.5rem;
-  display: grid;
-  justify-content:space-between;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-.text-content{
-  background-color: beige;
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
   padding: 1rem;
-  border-radius: 10px;
+  background-color: #f2f2f2;
 }
-.text-content h4 {
-  margin-bottom: 10px;
+#home .title{
+  background-color: rgb(218, 216, 216);
+  color: #444;
+  
+}
+/* Section Title */
+.title {
   text-align: center;
-  text-decoration: underline;
-  font-size: 25px;
-  color: rgb(4, 43, 106);
+  background-color: rgb(95, 93, 93);
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
 }
-.img-content{
+
+/* Article Layout */
+.contents {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap; /* allow stacking on smaller screens */
+}
+
+/* Text Content Styling */
+.text-content {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.text-content h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.text-content p,
+.text-content dl {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Image Grid */
+.img-content {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 15px;
-  background-color: blueviolet;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  flex: 1 1 300px;
 }
-.img-content img{
-  width: 200px;
+
+.img-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .text-content h4 {
+    font-size: 1.3rem;
+  }
+
+  .img-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-content {
+    grid-template-columns: 1fr;
+  }
+
+  .text-content,
+  .img-content {
+    width: 100%;
+  }
+}
+
+#skills {
+  padding: 2rem 1rem;
+  background-color: white;
+  color: grey;
+}
+
+.skills-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+}
+
+.skills-intro {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #ccc;
+}
+
+.skills-list {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.skills-list li {
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.skills-list li:hover {
+  transform: translateY(-5px);
+  background: #333;
+}
+#contact {
+  background-color: #f4f4f4;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+#contact .title {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.contacts-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contacts-icons a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.contacts-icons a:hover {
+  transform: scale(1.1);
+}
+
+.contacts-icons img {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.95rem;
+  margin-top: 2rem;
+  border-top: 1px solid #ddd;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+footer .back-to-top {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer .back-to-top:hover {
+  color: #ff9800;
+  text-decoration: underline;
+}
+

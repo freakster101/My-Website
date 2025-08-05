@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dark Mode Profile Card</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Courier New', monospace;
+    }
+
+    body {
+      background-color: #0f0f0f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .profile-card {
+      background: #1a1a1a;
+      border: 2px solid #00fff7;
+      border-radius: 20px;
+      padding: 2rem;
+      width: 320px;
+      text-align: center;
+      box-shadow:
+        0 0 5px #00fff7,
+        0 0 10px #00fff7,
+        0 0 20px #00fff7;
+      color: #f2f2f2;
+      transition: transform 0.3s ease;
+    }
+
+    .profile-card:hover {
+      transform: scale(1.05);
+    }
+
+    .profile-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #00fff7;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .profile-name {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #00fff7;
+      margin-bottom: 0.3rem;
+    }
+
+    .profile-role {
+      font-size: 1rem;
+      color: #ccc;
+      margin-bottom: 1rem;
+    }
+
+    .profile-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .btn {
+      padding: 0.5rem 1rem;
+      background: transparent;
+      color: #00fff7;
+      border: 2px solid #00fff7;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #00fff7;
+      color: #0f0f0f;
+      box-shadow: 0 0 10px #00fff7;
+    }
+    @keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7, 0 0 20px #00fff7;
+  }
+  50% {
+    box-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7, 0 0 30px #00fff7;
+  }
+}
+
+.profile-card {
+  animation: glow 2s infinite ease-in-out;
+}
+@media (max-width: 400px) {
+  .profile-card {
+    width: 90%;
+    padding: 1.5rem;
+  }
+  .profile-name {
+    font-size: 1.3rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <img class="profile-image" src="images/IMG_20220516_131354_Bokeh.jpg" alt="Profile Photo" />
+    <div class="profile-name">Jagdish Poudel</div>
+    <div class="profile-role">Dark Mode Developer ☠</div>
+    <div class="profile-buttons">
+      <button class="btn">Connect</button>
+      <button class="btn">Hire Me</button>
+    </div>
+  </div>
+</body>
+</html>

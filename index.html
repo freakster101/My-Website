@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Jagdish Poudel</title>
   <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/header.css">
+  <link rel="stylesheet" href="CSS/project.css">
+  <link rel="stylesheet" href="CSS/pcard.css">
+  
   <link rel="stylesheet" href="CSS/info.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,21 +16,24 @@
 </head>
 <body>
   <header>
-      <nav>
-        <ul class="nav">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#project">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contacts">Contacts</a></li>
-        </ul>
-      </nav>
-      <div class="pageTitle">
-      <h1>My Portfolio</h1></div>
-    <div class="images">
-      <img src="images/My-logo.png" alt="My Logo" height="100%" width="100px">
+    <div class="my-logo">
+      <img src="/images/My-logo.png" alt="My-logo" height="50px" width="100px">
     </div>
-    </header>
+    <h1>Jagdish Poudel</h1>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav class="menu">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skill">Skills</a>
+          <a href="#project">Projects</a> 
+          <a href="#contact">Contacts</a>
+    </nav>
+  </header>
     <main>
       <section id="home">
           <h2 class="title">Home</h2> 
@@ -58,73 +65,147 @@
                 <strong>Thanks for stopping by!</strong>
               </p>
           </div>
-          <div class="img-gallary">
             <div class="img-content">
               <img src="images/IMG-20220217-WA0001.jpg" alt="profile pic">
               <img src="images/IMG_20220414_174518_Bokeh.jpg" alt="profile pic 2">
               <img src="images/IMG_20220516_131347_Bokeh.jpg">
               <img src="images/IMG_20220516_131354_Bokeh.jpg">
             </div>
+        </article>
+      </section>
+      <section id="projects">
+        <h2 class="title">Projects</h2>
+            <h3>Personal Portfolio Website</h3>
+            <p><strong>Tech Used:</strong> HTML, CSS, GitHub Pages</p>
+            <p>
+              Designed and developed a responsive personal website using only HTML and CSS.
+              Showcases my journey, skills, and creative web experiments. Hosted via GitHub Pages.
+            </p>
+            <p><em>💡 "Not just a webpage — it’s my learning playground."</em></p>
+            <ul>
+              <li>Web Development & App Creation</li>
+              <li>Android OS Customization & Rooting</li>
+              <li>Linux Terminal & Command-line Operations</li>
+            </ul>
+          </div>
+        </div>
+
+        <article class="my-projects">
+          <div class="project">
+            <h3>1. Personal Portfolio Website</h3>
+            <p>A clean, responsive website to showcase my skills and projects.</p>
+          </div>
+          <div class="project">
+            <h3>2. E-Commerce Product Page</h3>
+            <p>Modern UI with filtering, sorting, and cart. Mobile-first approach.</p>
+          </div>
+          <div class="project">
+            <h3>3. To-Do List Web App</h3>
+            <p>CRUD-enabled task manager using LocalStorage API.</p>
+          </div>
+          <div class="project">
+            <h3>4. Pomodoro Focus Timer</h3>
+            <p>Customizable timer app with sessions, breaks, and UI feedback.</p>
+          </div>
+          <div class="project">
+            <h3>5. Live Weather App</h3>
+            <p>Fetches real-time data from OpenWeatherMap API by city.</p>
+          </div>
+          <div class="project">
+            <h3>6. CSS Animation & Art</h3>
+            <p>Showcases advanced keyframes, transitions, and transform effects.</p>
+          </div>
+          <div class="project">
+            <h3>7. Responsive Blog UI</h3>
+            <p>Frontend simulation of a blog platform using dynamic blog cards.</p>
+          </div>
+          <div class="project">
+            <h3>8. Mobile Navigation Menu</h3>
+            <p>Hamburger menu, off-canvas nav, and sticky header demo.</p>
+          </div>
+          <div class="project">
+            <h3>9. Smart Quiz App</h3>
+            <p>Multiple sets, timers, and score tracking with state management.</p>
+          </div>
+          <div class="project">
+            <h3>10. Portfolio Traffic Dashboard</h3>
+            <p>Data visualization using Chart.js with pie, line, and bar charts.</p>
           </div>
         </article>
       </section>
-      <section id="project">
-        <h2 class="title">Projects</h2>
-        <img src="icons/globe.png" alt="globe icon">
-        <h2>Personal Portfolio Website</h2>
-        <p>
-          <strong>Tech Used:</strong> HTML, CSS, GitHub Pages<br>
-          Designed and developed a responsive personal website from scratch using only HTML and CSS. This site showcases my skills, journey, and creative experiments with web layouts, positioning systems, and responsive design.
-          I hosted the project using GitHub Pages, managed version control with Git, and I continue to improve it daily by refining sections and adding new features.
-        </p>
-
-        <p>
-          <em>💡 "It’s not just a webpage — it’s my learning playground, where every line of code tells a story."</em>
-        </p>
-
-        <p><strong>Key Areas of Expertise:</strong></p>
-        <ul>
-          <li>Web Development & App Creation</li>
-          <li>Android OS Customization & Rooting</li>
-          <li>Linux Terminal & Command-line Operations</li>
-        </ul>
-      </section>
       <section id="skills">
         <h2 class="title">Skills</h2>
-        <p>
-          My skills so far include:
-        </p>
-        <ul>
-          <li>HTML & CSS (in progress)</li>
-          <li>JavaScript (coming up next)</li>
-          <li>Python, Flask, and Django (planned)</li>
-          <li>Android Customization & Rooting</li>
-          <li>Linux Terminal Usage</li>
-          <li>Basic Backend Programming</li>
-          <li>Intro to Ethical Hacking & Encryption</li>
-        </ul>
+
+        <div class="skills-container">
+          <p class="skills-intro">Here’s what I’ve explored so far on my learning journey:</p>
+
+          <ul class="skills-list">
+            <li><strong>HTML & CSS</strong> — (in progress)</li>
+            <li><strong>JavaScript</strong> — (coming up next)</li>
+            <li><strong>Python, Flask & Django</strong> — (planned)</li>
+            <li><strong>Android Customization & Rooting</strong></li>
+            <li><strong>Linux Terminal Usage</strong></li>
+            <li><strong>Basic Backend Programming</strong></li>
+            <li><strong>Intro to Ethical Hacking & Encryption</strong></li>
+          </ul>
+        </div>
       </section>
+
       <section id="about">
         <h2 class="title">About</h2>
-        <h3>Hello, I'm Jagdish Poudel</h3>
-        <h4>A Security Professional | Web Developer in Training</h4>
-        <p>
-          Welcome to my personal website! With over 8 years of professional experience in the security industry, I currently work as a CCTV Operator at <strong>Hamad Medical Corporation</strong> under <strong>Teyseer Security Services W.L.L.</strong> 
-          My roles have ranged from Access Control Officer to Emergency Responder, Patroller, Fire Alarm System Responder, and Access Control System Security Specialist.
-        </p>
+        <div class="profile-card">
+          <img class="profile-image" src="images/IMG_20220516_131354_Bokeh.jpg" alt="Profile Image">
+          <h2 class="profile-name">Jagdish Poudel</h2>
+          <p class="profile-role">Aspiring Web Developer & CCTV Security Specialist</p>
+          <p class="bio">
+            Passionate learner transitioning from 8 years in security to web development. Mixing discipline with creativity.
+          </p>
+          <div class="profile-buttons">
+            <button class="btn"><a href="#contact">Contact Me</a></button>
+            <button class="btn">Download CV</button>
+          </div>
+        </div>
 
-        <p>
-          While I take pride in my career in security, I’m also passionate about technology and development. I’m currently transitioning into the world of <strong>Web Development</strong> and <strong>Linux Systems</strong> — dedicating my free time to learning modern tools and frameworks.
-        </p>
+        <div class="about-description">
+          <p>
+            Welcome to my personal website! With over 8 years of professional experience in the security industry, I currently work as a CCTV Operator at <strong>Hamad Medical Corporation</strong> under <strong>Teyseer Security Services W.L.L.</strong> 
+            My roles have ranged from Access Control Officer to Emergency Responder, Patroller, Fire Alarm System Responder, and Access Control System Security Specialist.
+          </p>
+
+          <p>
+            While I take pride in my career in security, I’m also passionate about technology and development. I’m currently transitioning into the world of <strong>Web Development</strong> and <strong>Linux Systems</strong> — dedicating my free time to learning modern tools and frameworks.
+          </p>
+        </div>
       </section>
       <section id="contact">
-        <h1 class="title">Contacts</h1>
+        <h2 class="title">Contacts</h2>
 
+        <div class="contacts-icons">
+          <a href="https://www.facebook.com/poudel.jagdish/" target="_blank" title="Facebook">
+            <img src="icons/facebook.png" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/jagdispoudel/" target="_blank" title="Instagram">
+            <img src="icons/instagram.png" alt="Instagram">
+          </a>
+          <a href="https://wa.me/97433795639" target="_blank" title="WhatsApp">
+            <img src="icons/whatsapp.png" alt="WhatsApp">
+          </a>
+          <a href="tel:+97433795639" title="Call">
+            <img src="icons/phone-call.png" alt="Phone">
+          </a>
+          <a href="tel:+97433795639" title="Website">
+            <img src="icons/globe.png" alt="Website">
+          </a>
+        </div>
       </section>
+
     </main>
     <footer>
-      <p><strong>Copyright</strong>&copy; <time datetime="YYYY">2025</time> Jagdish Poudel</p>
-      <a href="#">Back To Top</a>
-    </footer>
+    <p>
+      <strong>&copy; <time datetime="2025">2025</time> Jagdish Poudel</strong>
+    </p>
+    <a href="#top" class="back-to-top">Back To Top ↑</a>
+  </footer>
+
 </body>
 </html>
